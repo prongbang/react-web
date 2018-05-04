@@ -1,0 +1,10 @@
+version: '3.4'
+
+services:
+  react-frontend-prod:
+    container_name: react-frontend-prod
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - '80:80'
